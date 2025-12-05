@@ -51,8 +51,8 @@ const ChatInterface = () => {
     return (
         <div className="chat-panel glass-panel">
             <div className="chat-header">
-                <h2>Rafiq-AI Chat</h2>
-                <span className="live-indicator">● Online</span>
+                <h2>Discussion avec Rafiq-AI</h2>
+                <span className="live-indicator">● En ligne</span>
             </div>
 
             <div className="messages-area">
@@ -62,7 +62,7 @@ const ChatInterface = () => {
                             {msg.text}
                             {msg.chunks && msg.chunks.length > 0 && (
                                 <div className="evidence-tag">
-                                    Based on {msg.chunks.length} sources
+                                    Basé sur {msg.chunks.length} sources
                                 </div>
                             )}
                         </div>
@@ -82,7 +82,7 @@ const ChatInterface = () => {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyPress={handleKeyPress}
-                    placeholder="Ask a question..."
+                    placeholder="Posez une question..."
                 />
                 <button className="btn-send" onClick={handleSend}>➤</button>
             </div>

@@ -16,10 +16,10 @@ function App() {
             className="btn-admin-toggle"
             onClick={() => isAdmin ? setIsAdmin(false) : setShowLogin(true)}
           >
-            {isAdmin ? 'Logout' : 'Admin'}
+            {isAdmin ? 'Déconnexion' : 'Admin'}
           </button>
         </div>
-        <p>Virtual Secretary for Défi National Nuit de l'Info 2025</p>
+        <p>Secrétaire Virtuel pour le Défi National Nuit de l'Info 2025</p>
       </header>
 
       <main className="main-content">

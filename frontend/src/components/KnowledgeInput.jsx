@@ -9,7 +9,7 @@ const KnowledgeInput = () => {
     if (!text.trim()) return;
 
     setIsLoading(true);
-    setStatus('Updating...');
+    setStatus('Mise à jour...');
 
     try {
       const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
@@ -23,14 +23,14 @@ const KnowledgeInput = () => {
 
       const data = await response.json();
       if (response.ok) {
-        setStatus(`Success! ${data.chunk_count} chunks indexed.`);
+        setStatus(`Succès ! ${data.chunk_count} morceaux indexés.`);
         setText(''); // Clear input on success? Maybe keep it.
       } else {
-        setStatus('Error updating knowledge base.');
+        setStatus('Erreur lors de la mise à jour.');
       }
     } catch (error) {
       console.error(error);
-      setStatus('Network error.');
+      setStatus('Erreur réseau.');
     } finally {
       setIsLoading(false);
     }
@@ -38,14 +38,14 @@ const KnowledgeInput = () => {
 
   return (
     <div className="knowledge-panel glass-panel">
-      <h2>Knowledge Base</h2>
-      <p className="subtitle">Paste your documents here to train Rafiq-AI.</p>
+      <h2>Base de Connaissances</h2>
+      <p className="subtitle">Collez vos documents ici pour entraîner Rafiq-AI.</p>
 
       <textarea
         className="knowledge-input"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Paste text here (FAQ, Rules, Schedule...)"
+        placeholder="Collez le texte ici (FAQ, Règles, Planning...)"
       />
 
       <div className="actions">
@@ -54,7 +54,7 @@ const KnowledgeInput = () => {
           onClick={handleSubmit}
           disabled={isLoading}
         >
-          {isLoading ? 'Indexing...' : 'Update Knowledge'}
+          {isLoading ? 'Indexation...' : 'Mettre à jour'}
         </button>
         {status && <span className="status-msg">{status}</span>}
       </div>
