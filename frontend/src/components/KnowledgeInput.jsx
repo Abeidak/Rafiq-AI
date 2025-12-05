@@ -12,7 +12,8 @@ const KnowledgeInput = () => {
     setStatus('Updating...');
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/knowledge', {
+      const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+      const response = await fetch(`${API_URL}/api/knowledge`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +39,7 @@ const KnowledgeInput = () => {
   return (
     <div className="knowledge-panel glass-panel">
       <h2>Knowledge Base</h2>
-      <p className="subtitle">Collez vos documents ici pour entraîner Rafiq-AI.</p>
+      <p className="subtitle">Paste your documents here to train Rafiq-AI.</p>
 
       <textarea
         className="knowledge-input"
