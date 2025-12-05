@@ -2,6 +2,8 @@
 
 **Rafiq-AI** est un secrétaire virtuel intelligent conçu pour le **Défi National Nuit de l'Info 2025**. Il répond aux questions des visiteurs en utilisant une base de connaissances dynamique et supporte le dialecte mauritanien (Hassaniya).
 
+🌐 **[Accéder à l'application en ligne](https://rafiq-ai-dun.vercel.app/)**
+
 ## 🚀 Fonctionnalités
 
 - **Chatbot Intelligent** : Répond aux questions en se basant uniquement sur la base de connaissances fournie.
@@ -63,6 +65,19 @@ L'application sera accessible sur `http://localhost:5173`.
 3.  Dans le panneau de gauche, collez votre texte (présentation, FAQ, règles...).
 4.  Cliquez sur **"Update Knowledge"**.
 5.  Le chatbot est immédiatement mis à jour !
+
+### 🏢 Guide pour les Entreprises
+
+Rafiq-AI est conçu pour être facilement adaptable à votre contenu.
+
+1.  **Connectez-vous** en tant qu'administrateur.
+2.  **Copiez** l'ensemble de vos documents textuels (Présentation, FAQ, Procédures...).
+3.  **Collez** le texte dans la zone dédiée.
+4.  Cliquez sur **"Mettre à jour"**.
+
+**💡 Astuce :** Plus votre base de connaissances est riche et détaillée, plus les réponses de Rafiq-AI seront précises et pertinentes. Cela améliore également sa capacité à répondre aux questions posées en **Hassaniya**, car il disposera de plus de contexte pour trouver la bonne information.
+
+🎥 **[Voir la Démo Vidéo](demo_narrated.webp)**
 
 ## 🧪 Vérification
 
