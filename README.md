@@ -77,7 +77,7 @@ Rafiq-AI est conçu pour être facilement adaptable à votre contenu.
 
 **💡 Astuce :** Plus votre base de connaissances est riche et détaillée, plus les réponses de Rafiq-AI seront précises et pertinentes. Cela améliore également sa capacité à répondre aux questions posées en **Hassaniya**, car il disposera de plus de contexte pour trouver la bonne information.
 
-🎥 **[Voir la Démo Vidéo](demo_narrated.webp)**
+🎥 **[Voir la Démo Vidéo](demo.webp)**
 
 ## 🧪 Vérification
 
